@@ -1,0 +1,26 @@
+<idea-plugin>
+    <id>com.aiwoqe.plugin</id>
+    <name>service-dao-mapper generator</name>
+    <vendor email="1936563461@qq.com" url="">null</vendor>
+
+    <description>通过窗口的输入来一次性产生service,serviceImpl,dao,mapper的相应方法，用鼠标选择xxxService.后面的方法名，然后摁快捷键”shift ctrl alt Z“即可触发，然后根据交互窗口进行选择即可</description>
+
+    <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+         on how to target different products -->
+    <!-- uncomment to enable plugin in all products
+    <depends>com.intellij.modules.lang</depends>
+    -->
+
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- Add your extensions here -->
+    </extensions>
+    <depends>com.intellij.modules.java</depends>
+    <actions>
+        <!-- Add your actions here -->
+        <action id="GetNoteAndMethodAction" class="com.aiwoqe.plugin.GetNoteAndMethodAction" text="GetNoteAndMethod"
+                description="获取mapper的注释和方法名">
+            <add-to-group group-id="EditorPopupMenu" anchor="first"/>
+            <keyboard-shortcut keymap="$default" first-keystroke="shift ctrl alt Z"/>
+        </action>
+    </actions>
+</idea-plugin>
