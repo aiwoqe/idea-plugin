@@ -1,5 +1,7 @@
 # idea-plugin
-    该插件的使用如下：
+> 该插件的作用是通过窗口的输入来一次性产生service,serviceImpl,dao,mapper的相应方法，用鼠标选择xxxService.后面的方法名，然后摁快捷键”shift ctrl alt z“即可触发，然后根据交互窗口进行选择即可
+
+> 使用说明如下：
 1. > 选择controller层中的service的方法
 
 ![](images/README/2021-08-10-11-21-45.png)
