@@ -38,12 +38,20 @@
 
 ![](images/README/2021-08-10-11-28-08.png)
 
-9.   dao层生成的代码
+9.  dao层生成的代码
 
 ![](images/README/2021-08-10-11-28-18.png)
 
 10.  mapper层生成的代码
 
 ![](images/README/2021-08-10-11-28-47.png)
+
+11. 参数选择和返回值选择也可以是自定义的类，即项目路径下的类
+
+![](images/README/2022-03-01-18-01-35.png)
+
+------------------------
+
+![](images/README/2022-03-01-18-00-37.png)
 
 **不过需要注意的是，匹配相应的层都是通过controller中的service的名字的前缀，如上图中的userService的前缀user来去匹配项目中的UserService,UserServiceImpl,UserDao.java,UserDao.mapper的，因此命名需按照这种规范才能找到相应的文件**
